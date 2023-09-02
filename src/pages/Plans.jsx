@@ -1,19 +1,16 @@
-import img from "../assets/plans/hosting-basic.png"
-import img1 from "../assets/plans/hosting-advanced.png"
-import img2 from "../assets/plans/hosting-professional.png"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 const Plans = () => {
     const { i18n } = useTranslation();
-    
+
     return (
         <section className="start pricing">
             <div className="container">
                 <div className="box">
-                    <div className="title">Basic</div>
-                    <img src={img} alt="" />
+                    <div className="title">Starter</div>
+                    <i className="fa-solid fa-star"></i>
                     <div className="price">
-                        <span className="amount">$15</span>
+                        <span className="amount">$0</span>
                         <span className="time">Per Month</span>
                     </div>
                     <ul>
@@ -27,10 +24,10 @@ const Plans = () => {
                 </div>
                 <div className="box popular">
                     <div className="label">Most Popular</div>
-                    <div className="title">Advanced</div>
-                    <img src={img1} alt="" />
+                    <div className="title">Joined</div>
+                    <i className="fa-solid fa-ranking-star"></i>
                     <div className="price">
-                        <span className="amount">$25</span>
+                        <span className="amount">$29</span>
                         <span className="time">Per Month</span>
                     </div>
                     <ul>
@@ -43,10 +40,10 @@ const Plans = () => {
                     <Link to="/contact-us">Choose Plan</Link>
                 </div>
                 <div className="box">
-                    <div className="title">Professional</div>
-                    <img src={img2} alt="" />
+                    <div className="title">Partner</div>
+                    <i className="fa-solid fa-medal"></i>
                     <div className="price">
-                        <span className="amount">$45</span>
+                        <span className="amount">$1,000</span>
                         <span className="time">Per Month</span>
                     </div>
                     <ul>

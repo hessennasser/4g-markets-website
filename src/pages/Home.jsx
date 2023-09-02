@@ -3,6 +3,7 @@ import img from "../assets/testimonials/Image.png"
 import img1 from "../assets/testimonials/Image-1.png"
 import img2 from "../assets/testimonials/Image-2.png"
 import img3 from "../assets/testimonials/Image-3.png"
+import majedImg from "../assets/Majed Eid PNG 1.png"
 const Home = () => {
     const { i18n, t } = useTranslation();
     const advantage = t('advantages');
@@ -53,18 +54,18 @@ const Home = () => {
                 <div className="container">
                     <div className="main-title">
                         <h2 style={{ color: "var(--mainColor)", marginBottom: "2rem" }}>
-                            {i18n.language === "en" ? "About US" : "من نحن"}
+                            {i18n.language === "en" ? "About System" : "عن النظام"}
                         </h2>
                     </div>
                     <div className="box">
-                        <img src={img} alt="" />
-                        <h3>MAJEDEID ALOTAIBI</h3>
-                        <span className="title">System owner</span>
                         <p>
                             An innovative platform bridging merchandise suppliers and grocery
                             store owners, facilitating seamless trade, enhancing inventory
                             availability, and optimizing supply chain efficiency.
                         </p>
+                        <img src={majedImg} alt="" />
+                        <h3>MAJEDEID ALOTAIBI</h3>
+                        <span className="title">System owner</span>
                     </div>
                 </div>
             </section>

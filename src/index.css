@@ -448,7 +448,7 @@ header button {
 .home,
 .start {
     margin-top: var(--margin-top-main-section);
-    min-height: calc(100vh - 84px);
+    /* min-height: calc(100vh - 84px); */
 }
 
 .home .welcome-text {
@@ -638,11 +638,16 @@ section#services {
 
 .about-us .box {
     text-align: center;
-    max-width: 80%;
+    max-width: 65%;
     margin-inline: auto;
 }
 
-.about-us .box img,
+@media (max-width: 767px) {
+    .about-us .box {
+        max-width: 100%;
+    }
+}
+
 .testimonials .box img {
     position: absolute;
     right: -10px;
@@ -654,16 +659,6 @@ section#services {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border: 10px solid #fff;
-}
-
-.about-us .box img {
-    right: 50%;
-    transform: translateX(50%);
-    -webkit-transform: translateX(50%);
-    -moz-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    -o-transform: translateX(50%);
-    top: -80px;
 }
 
 body[dir="rtl"] .testimonials .box img {
@@ -685,6 +680,11 @@ body[dir="rtl"] .testimonials .box img {
     color: #777;
     margin-bottom: 12px;
     display: block;
+}
+
+.about-us .box p {
+    margin-bottom: 1rem !important;
+    font-size: 1.5rem;
 }
 
 .about-us .box p,
@@ -788,9 +788,10 @@ body[dir="rtl"] .testimonials .box img {
     letter-spacing: -1px;
 }
 
-.pricing .box img {
+.pricing .box i {
     width: 80px;
     margin-bottom: 30px;
+    font-size: 3rem;
 }
 
 .pricing .box .price {
@@ -811,6 +812,7 @@ body[dir="rtl"] .testimonials .box img {
 
 .pricing .box ul {
     text-align: left;
+    display: none;
 }
 
 .pricing .box ul li {

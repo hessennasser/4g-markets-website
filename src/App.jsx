@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import Footer from './components/Footer';
 import Services from './pages/Services';
 import Plans from './pages/Plans';
+import RoadMap from './pages/RoadMap';
 
 function App() {
   const { i18n } = useTranslation();
@@ -22,6 +23,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Services />} />
         <Route path='/plans' element={<Plans />} />
+        <Route path='/road-map' element={<RoadMap />} />
       </Routes>
       <Footer />
     </>
