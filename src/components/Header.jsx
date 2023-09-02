@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <header>
             <div className="container">
-                <Link className="logo">
+                <Link to="/" className="logo">
                     <img src={logo} alt="4G Markets" />
                 </Link>
                 <div className="menu-icon" dir="rtl" onClick={() => setActiveNav(!activeNav)}>

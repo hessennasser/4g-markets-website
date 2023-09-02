@@ -101,6 +101,9 @@ i18n
                             description: "Empower users to handle their personal profiles and update their information.",
                         },
                     ],
+                    roadMap: [
+                        
+                    ]
                 },
             },
             ar: {

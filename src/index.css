@@ -407,6 +407,8 @@ header button {
 }
 
 @media(min-width: 767px) {
+
+
     .menu-icon {
         display: none;
     }
@@ -432,6 +434,14 @@ header button {
         background: linear-gradient(90deg, rgba(80, 28, 111, 1) 0%, rgb(131 32 191) 100%);
         z-index: 100;
         height: 100vh;
+    }
+
+    header button {
+        font-size: 0.95rem;
+    }
+
+    header .logo img {
+        height: 54px;
     }
 }
 
@@ -852,6 +862,117 @@ body[dir="rtl"] .testimonials .box img {
 
 /* end pricing  */
 
+/* start Road map */
+.vertical-timeline::before {
+    background: var(--main-color);
+}
+
+span.vertical-timeline-element-date {
+    color: var(--second-color);
+    font-size: 1.25rem !important;
+}
+
+/* end Road map */
+
+/* start system idea */
+
+.system-idea .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.system-idea .content .text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 600;
+    max-width: 50%;
+}
+
+@media (max-width: 873px) {
+    .system-idea .content .text {
+        max-width: 100%;
+    }
+}
+
+.system-idea .content .video {
+    width: 400px;
+    height: 400px;
+}
+
+/* end system idea */
+
+/* start contact */
+
+.contact .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .content img {
+    height: 300px;
+    width: 300px;
+    /* margin-inline: auto; */
+}
+
+.contact .content>div {
+    background: var(--second-color);
+    padding: 1rem;
+    color: var(--white);
+    text-align: center;
+    flex: 1;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact .content>div h2 {
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    height: 1.75rem;
+    padding: 0.5rem;
+}
+
+.contact form textarea {
+    min-height: 100px;
+    max-height: 200px;
+    resize: vertical;
+}
+
+.contact form button {
+    background: var(--main-color);
+    color: var(--white);
+    width: 100px;
+    padding: 10px 1rem;
+    margin-inline: auto;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+/* end contact */
 
 /* start footer  */
 footer {

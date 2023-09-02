@@ -51,7 +51,7 @@ const Footer = () => {
                                     return (
                                         <li key={item.id}>
                                             <Link to={item.href}
-                                                target="_blank" className="footer-link">{item.name}</Link>
+                                                className="footer-link">{item.name}</Link>
                                         </li>
                                     )
                                 })
