@@ -59,9 +59,12 @@ const Home = () => {
                     </div>
                     <div className="box">
                         <p>
-                            An innovative platform bridging merchandise suppliers and grocery
-                            store owners, facilitating seamless trade, enhancing inventory
-                            availability, and optimizing supply chain efficiency.
+                        {
+                            i18n.language === "en" ?
+                            "An interface bridging suppliers and grocery store proprietors with consumer , revolutionizing trade of goods and optimizing inventory management for superior retail operations"
+                            :
+                            "واجهة تربط بين الموردين وأصحاب متاجر البقالة مع المستهلكين تحدث ثورة في تجارة البضائع وتحسين إدارة المخزون لتحقيق عمليات بيع تجزئة متميزة."
+                        }
                         </p>
                         <img src={majedImg} alt="" />
                         <h3>MAJEDEID ALOTAIBI</h3>

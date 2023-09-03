@@ -11,15 +11,15 @@ const Footer = () => {
             <div className="footer-top">
                 <div className="container">
                     <div className="footer-brand">
-                        <a href="#" className="logo">
+                        <Link to="/" className="logo">
                             <img src={logo} alt="4G Markets" />
-                        </a>
+                        </Link>
                         <p className="footer-text">
                             {
                                 i18n.language === "en" ?
-                                    "An interface bridging suppliers and grocery store proprietors,revolutionizing trade of goods and optimizing inventory management for superior retail operations"
+                                    "An interface bridging suppliers and grocery store proprietors with consumer , revolutionizing trade of goods and optimizing inventory management for superior retail operations"
                                     :
-                                    "واجهة تربط بين الموردين وأصحاب متاجر البقالة، تحدث ثورة في تجارة البضائع وتحسين إدارة المخزون لتحقيق عمليات بيع تجزئة متميزة."
+                                    "واجهة تربط بين الموردين وأصحاب متاجر البقالة مع المستهلكين تحدث ثورة في تجارة البضائع وتحسين إدارة المخزون لتحقيق عمليات بيع تجزئة متميزة."
                             }
                         </p>
                         <ul className="social-list">
@@ -73,9 +73,9 @@ const Footer = () => {
                                 <p className="footer-item-title">{i18n.language === "en" ? "Contact US" : "تواصل معنا"}</p>
                             </li>
                             <a href="mailto:majedeidg@gmail.com" className="footer-link"><i
-                                className="fa-brands fa-tiktok"></i>Email</a>
+                                className="fa-solid fa-envelope" style={{marginInline: "0.25rem"}}></i>Email</a>
                             <a href="tel:+966592824082" className="footer-link"><i
-                                className="fa-brands fa-whatsapp"></i>Phone</a>
+                                className="fa-solid fa-phone" style={{marginInline: "0.25rem"}}></i>Phone</a>
                         </ul>
                     </div>
                 </div>

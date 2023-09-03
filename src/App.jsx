@@ -10,6 +10,8 @@ import Plans from './pages/Plans';
 import RoadMap from './pages/RoadMap';
 import SystemIdea from './pages/SystemIdea';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
+import SignUp from './pages/signUp';
 
 function App() {
   const { i18n } = useTranslation();
@@ -31,6 +33,8 @@ function App() {
         <Route path='/road-map' element={<RoadMap />} />
         <Route path='/system-idea' element={<SystemIdea />} />
         <Route path='/contact-us' element={<Contact />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/sign-up' element={<SignUp />} />
       </Routes>
       <Footer />
     </>
