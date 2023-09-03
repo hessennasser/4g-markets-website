@@ -421,7 +421,7 @@ header button {
     z-index: 100;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 991px) {
 
 
     .menu-icon {
@@ -429,7 +429,7 @@ header button {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     header .nav {
         display: none;
     }
@@ -520,8 +520,8 @@ header button {
     width: 100%;
     background-color: var(--second-color);
     border-right: 2px solid var(--black);
-    animation: type-animation 4s steps(354) infinite;
-    -webkit-animation: type-animation 4s steps(354) infinite;
+    animation: type-animation 7s steps(354) infinite;
+    -webkit-animation: type-animation 7s steps(354) infinite;
     rotate: 180deg;
 }
 
@@ -923,7 +923,7 @@ span.vertical-timeline-element-date {
     text-align: center;
 }
 
-.system-idea .features .content{
+.system-idea .features .content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1063,12 +1063,16 @@ span.vertical-timeline-element-date {
     border-radius: 3px;
 }
 
-.auth button {
+.auth button,
+.auth a {
     background-color: var(--main-color);
     color: #fff;
     border: none;
     border-radius: 3px;
     padding: 10px 20px;
+    margin: 1rem auto 0;
+    display: block;
+    width: fit-content;
     cursor: pointer;
     transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -1077,14 +1081,165 @@ span.vertical-timeline-element-date {
     -o-transition: 0.3s;
 }
 
-.auth button:hover {
+.auth button:hover,
+.auth a:hover {
     filter: brightness(1.25);
     -webkit-filter: brightness(1.25);
 }
 
-
 /* end auth */
 
+/* start dashboard */
+.dashboard .container {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-page {
+    width: calc(70% - 20px);
+}
+
+.dashboard-page .form {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.dashboard-page .form h2 {
+    text-align: center;
+}
+
+.dashboard-page .form-group {
+    margin-bottom: 20px;
+}
+
+.dashboard-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dashboard-page input[type="text"],
+.dashboard-page input[type="tel"],
+.dashboard-page input[type="number"],
+.dashboard-page input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dashboard-page button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dashboard-page button:hover {
+    background-color: #0056b3;
+}
+
+.dashboard-page .table-wrapper {
+    overflow-x: auto;
+}
+
+.dashboard-page .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+    margin-top: 20px;
+}
+
+.dashboard-page .data-table th,
+.dashboard-page .data-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-page .data-table th:not(:nth-child(1)),
+.dashboard-page .data-table td:not(:nth-child(1)) {
+    min-width: 200px;
+    width: max-content;
+}
+
+.dashboard-page .data-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.dashboard-page .data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.dashboard-page .data-table tr:hover {
+    background-color: #ddd;
+}
+
+
+/* start side bar */
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30%;
+    width: 100%;
+    gap: 1rem;
+    background: #ddd;
+    padding-block: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.side-bar li {
+    margin-inline: 1rem;
+}
+
+.side-bar a {
+    display: block;
+    color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+
+}
+
+.side-bar a.active {
+    background: var(--second-color);
+    color: var(--white);
+}
+
+@media (max-width: 767px) {
+
+    .side-bar,
+    .dashboard-page {
+        width: 100%;
+        max-width: 100%;
+    }
+}
 
 /* start footer  */
 footer {

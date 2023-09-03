@@ -37,42 +37,42 @@ const SignUp = () => {
                 <h2>{i18n.language === "en" ? "Register" : "سجل معنا"}</h2>
                 <form onSubmit={handleSubmit}>
                     <div className='form-row'>
-                        <label>User Category:</label>
+                        <label>{i18n.language === "en" ? "User Category" : "نوع الحساب"}</label>
                         <select name="category" onChange={handleChange} value={formData.category}>
                             <option value="supplier">Supplier</option>
                             <option value="shopOwner">Shop Owner</option>
                         </select>
                     </div>
                     <div className='form-row'>
-                        <label>Full Name:</label>
+                        <label>{i18n.language === "en" ? "Full Name" : "اسمك بالكامل"}</label>
                         <input type="text" name="fullName" onChange={handleChange} value={formData.fullName} />
                     </div>
                     <div className='form-row'>
-                        <label>Company / Shop Name:</label>
+                        <label>{i18n.language === "en" ? "Company / Shop Name" : "اسم الشركة / المحل"}</label>
                         <input type="text" name="companyName" onChange={handleChange} value={formData.companyName} />
                     </div>
                     <div className='form-row'>
-                        <label>Email Address:</label>
+                        <label>{i18n.language === "en" ? "Email Address" : "البريد الالكتروني"}</label>
                         <input type="email" name="email" onChange={handleChange} value={formData.email} />
                     </div>
                     <div className='form-row'>
-                        <label>Phone Number:</label>
+                        <label>{i18n.language === "en" ? "Phone Number" : "رقم الهاتف"}</label>
                         <input type="tel" name="phone" onChange={handleChange} value={formData.phone} />
                     </div>
                     <div className='form-row'>
-                        <label>Company / Shop Address:</label>
+                        <label>{i18n.language === "en" ? "Company / Shop Address" : "عنوان الشركة / المحل"}</label>
                         <input type="text" name="address" onChange={handleChange} value={formData.address} />
                     </div>
                     <div className='form-row'>
-                        <label>Type of Goods:</label>
+                        <label>{i18n.language === "en" ? "Type of Goods" : "نوع البضاعه"}</label>
                         <input type="text" name="goodsType" onChange={handleChange} value={formData.goodsType} />
                     </div>
                     <div className='form-row'>
-                        <label>Password:</label>
+                        <label>{i18n.language === "en" ? "Password" : "كلمة المرور"}</label>
                         <input type="password" name="password" onChange={handleChange} value={formData.password} />
                     </div>
                     <div className='form-row'>
-                        <label>Password Confirmation:</label>
+                        <label>{i18n.language === "en" ? "Password Confirmation" : "تأكيد كلمة المرور"}</label>
                         <input type="password" name="confirmPassword" onChange={handleChange} value={formData.confirmPassword} />
                     </div>
                     <button type="submit">Register</button>

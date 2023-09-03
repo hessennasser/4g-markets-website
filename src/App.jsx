@@ -12,6 +12,10 @@ import SystemIdea from './pages/SystemIdea';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import SignUp from './pages/signUp';
+import SharedLayout from './SharedLayout';
+import SupplierInfo from './dashboard/SupplierInfo';
+import AddProduct from './dashboard/AddProduct';
+import OrderPage from './dashboard/OrderPage';
 
 function App() {
   const { i18n } = useTranslation();
@@ -35,6 +39,13 @@ function App() {
         <Route path='/contact-us' element={<Contact />} />
         <Route path='/login' element={<Login />} />
         <Route path='/sign-up' element={<SignUp />} />
+        <Route path='/dashboard' element={<SharedLayout />} >
+          <Route index element={<SupplierInfo />} />
+          <Route path='add-product' element={<AddProduct />} />
+          <Route path='order-page' element={<OrderPage />} />
+          <Route path='initial-binding' element={<h2>initial-binding</h2>} />
+          <Route path='binding-store' element={<h2>binding-store</h2>} />
+        </Route>
       </Routes>
       <Footer />
     </>

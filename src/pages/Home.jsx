@@ -13,7 +13,14 @@ const Home = () => {
                 <div className="container">
                     <div className="welcome-text">
                         <h1>
-                            <span className="animation-text">4G Markets</span> <br />
+                            <span className="animation-text">
+                                {
+                                    i18n.language === "en" ?
+                                    "4G MARKETS SYSTEM IS A NEW REVOLUTION IN THE WORLD OF WHOLESALE AND RETAIL"
+                                    : 
+                                    "نظام 4G MARKETS ثورة جديدة في عالم الجملة والتجزئة"
+                                }
+                            </span> <br />
                         </h1>
                     </div>
                     <div className="wrapper">
@@ -59,12 +66,12 @@ const Home = () => {
                     </div>
                     <div className="box">
                         <p>
-                        {
-                            i18n.language === "en" ?
-                            "An interface bridging suppliers and grocery store proprietors with consumer , revolutionizing trade of goods and optimizing inventory management for superior retail operations"
-                            :
-                            "واجهة تربط بين الموردين وأصحاب متاجر البقالة مع المستهلكين تحدث ثورة في تجارة البضائع وتحسين إدارة المخزون لتحقيق عمليات بيع تجزئة متميزة."
-                        }
+                            {
+                                i18n.language === "en" ?
+                                    "An interface bridging suppliers and grocery store proprietors with consumer , revolutionizing trade of goods and optimizing inventory management for superior retail operations"
+                                    :
+                                    "واجهة تربط بين الموردين وأصحاب متاجر البقالة مع المستهلكين تحدث ثورة في تجارة البضائع وتحسين إدارة المخزون لتحقيق عمليات بيع تجزئة متميزة."
+                            }
                         </p>
                         <img src={majedImg} alt="" />
                         <h3>MAJEDEID ALOTAIBI</h3>

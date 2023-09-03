@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 function Login() {
     const { i18n } = useTranslation();
@@ -8,7 +9,6 @@ function Login() {
 
     const handleLogin = () => {
         // Handle login logic here
-        alert(`Logged in with Username: ${username} and Password: ${password}`);
     };
 
     return (
@@ -33,9 +33,7 @@ function Login() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
-                    <button type="button" onClick={handleLogin}>
-                        Login
-                    </button>
+                    <Link to="/dashboard/" >Login</Link>
                 </form>
             </div>
         </section>
